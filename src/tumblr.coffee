@@ -43,7 +43,7 @@ Tumblr = exports.Tumblr = (host, key) ->
       @posts options, fn
 
   # Alias text, quote, link, answer, video, audio and photo posts
-  alias @, type for type in ['text', 'quote', 'link', 'answer', 'video', 'audio', 'photo']
+  alias @, type for type in ['text', 'quote', 'link', 'answer', 'video', 'audio', 'photo', 'post']
 
   # Prepare url for API call
   urlFor = (action, self, options = null) ->
